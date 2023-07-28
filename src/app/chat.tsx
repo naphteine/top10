@@ -8,7 +8,25 @@ export default function Chat() {
   });
 
   return (
-    <div>
+    <div className="flex flex-col mx-24 justify-center">
+      <form onSubmit={handleSubmit} className="text-center">
+        <label>
+          Top 10...
+          <input
+            value={input}
+            placeholder="anime, filmler, yemekler..."
+            onChange={handleInputChange}
+            className="p-1 rounded"
+          />
+        </label>
+        <button
+          className="bg-slate-300 p-1 rounded hover:bg-slate-400"
+          type="submit"
+        >
+          Gönder
+        </button>
+      </form>
+
       <ul>
         {messages.map((m, index) => (
           <li key={index}>
@@ -17,14 +35,6 @@ export default function Chat() {
           </li>
         ))}
       </ul>
-
-      <form onSubmit={handleSubmit}>
-        <label>
-          Say something...
-          <input value={input} onChange={handleInputChange} />
-        </label>
-        <button type="submit">Send</button>
-      </form>
     </div>
   );
 }
