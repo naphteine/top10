@@ -1,27 +1,26 @@
 # Top Ten App
 
-Bu uygulamayı Next.js, TypeScript, Tailwind, React-Markdown ve OpenAI API kullanarak geliştirdim. Kullanıcı kutuya bir konu giriyor, örneğin "anime", "filmler", "yemekler" gibi ve kullanıcıya girilen konuyla ilgili OpenAI'dan Top 10 listesi sunuluyor. Bu proje ilk olarak şaka amaçlı, her zaman ilk sırada "Your Mom" yazacak şekilde geliştirildi. Daha sonra düzgün bir Top 10 uygulamasına dönüştürülmüştür.
+This is a web app developed using Next.js, Tailwind and OpenAI, that generates a top ten list using OpenAI, on the topic user provided.
 
-# Teknolojiler
+# Technologies Used
 
 - Next.js 13 (App Router)
 - React
 - React-Markdown
-- Tailwind
-- Tailwind Typography
+- Tailwind and Typography
 - OpenAI API
 - Vercel AI SDK
 
-# Eksiklikler
+# Problems
 
-- Bazen listenin son ögesi, onuncu öge yeni satırda gösterilmiyor.
-- Tasarım iyileştirilebilir.
+- Sometimes the last item of the list (10th) appear next to previous item.
+- Design can be improved, such as dark mode and proper sizing.
 
-# Yararlanılan kaynaklar
+# Resources Used
 
 - https://sdk.vercel.ai/docs/api-reference/use-chat
 - https://platform.openai.com/
 
 # License
 
-Bu proje MIT lisansı altındadır.
+This project is under [MIT License](./LICENSE).
