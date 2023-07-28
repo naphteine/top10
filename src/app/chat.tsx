@@ -12,7 +12,7 @@ export default function Chat() {
       <ul>
         {messages.map((m, index) => (
           <li key={index}>
-            {m.role === "user" ? "User: " : "AI: "}
+            {m.role === "user" ? "Sen: " : "AI: "}
             {m.content}
           </li>
         ))}
