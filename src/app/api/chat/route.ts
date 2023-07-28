@@ -22,7 +22,7 @@ export async function POST(req: Request) {
     messages: [
       {
         "role": "system",
-        "content": "You will be provided with a topic, and your task is to generate Top 10 list for  that topic. Write your output in Markdown. Name the list as \"Ananın En Sevdiği Top 10\", followed by topic. Use Turkish language. Top 10 list's first item should be always \"Anan\", without any explanation."
+        "content": "You will be provided with a topic, and your task is to generate Top 10 list for  that topic. Write your output in Markdown. Name the list as \"Top 10\", followed by topic."
       },
       {
         "role": "user",
@@ -30,7 +30,7 @@ export async function POST(req: Request) {
       },
       {
         "role": "assistant",
-        "content": "# Ananın En Sevdiği Top 10 Anime\n\n1. Anan\n2. Attack on Titan\n3. Death Note\n4. Naruto\n5. One Piece\n6. Fullmetal Alchemist: Brotherhood\n7. Dragon Ball Z\n8. Hunter x Hunter\n9. Sword Art Online\n10. My Hero Academia"
+        "content": "# Top 10 Anime\n\n1. Monster\n2. Attack on Titan\n3. Death Note\n4. Naruto\n5. One Piece\n6. Fullmetal Alchemist: Brotherhood\n7. Dragon Ball Z\n8. Hunter x Hunter\n9. Sword Art Online\n10. My Hero Academia"
       },
       {
         "role": "user",
@@ -38,7 +38,7 @@ export async function POST(req: Request) {
       },
       {
         "role": "assistant",
-        "content": "# Ananın En Sevdiği Top 10 Filmler\n\n1. Anan\n2. The Shawshank Redemption\n3. The Godfather\n4. Pulp Fiction\n5. Fight Club\n6. Inception\n7. The Dark Knight\n8. Forrest Gump\n9. The Matrix\n10. Schindler's List"
+        "content": "# Top 10 Filmler\n\n1. Sans Soleil\n2. The Shawshank Redemption\n3. The Godfather\n4. Pulp Fiction\n5. Fight Club\n6. Inception\n7. The Dark Knight\n8. Forrest Gump\n9. The Matrix\n10. Schindler's List"
       },
       {
         "role": "user",
@@ -46,7 +46,7 @@ export async function POST(req: Request) {
       },
       {
         "role": "assistant",
-        "content": "# Ananın En Sevdiği Top 10 Oyuncak\n\n1. Anan\n2. Lego\n3. Barbie bebek\n4. Transformers\n5. Yapboz\n6. Araba seti\n7. Bebek evi\n8. Yumuşak oyuncak\n9. Play-Doh\n10. Akıllı robot"
+        "content": "# Top 10 Oyuncak\n\n1. Tren seti\n2. Lego\n3. Barbie bebek\n4. Transformers\n5. Yapboz\n6. Araba seti\n7. Bebek evi\n8. Yumuşak oyuncak\n9. Play-Doh\n10. Akıllı robot"
       },
       {
         "role": "user",
@@ -54,7 +54,7 @@ export async function POST(req: Request) {
       },
       {
         "role": "assistant",
-        "content": "# Ananın En Sevdiği Top 10 Dil\n\n1. Anan\n2. İngilizce\n3. İspanyolca\n4. Fransızca\n5. Almanca\n6. Japonca\n7. İtalyanca\n8. Rusça\n9. Arapça\n10. Mandarin Çincesi"
+        "content": "# Top 10 Dil\n\n1. Türkçe\n2. İngilizce\n3. İspanyolca\n4. Fransızca\n5. Almanca\n6. Japonca\n7. İtalyanca\n8. Rusça\n9. Arapça\n10. Mandarin Çincesi"
       },
       ...messages
     ],

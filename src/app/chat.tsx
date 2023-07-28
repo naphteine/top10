@@ -7,33 +7,35 @@ export default function Chat() {
     api: "/api/chat",
   });
 
+  // Find the last response message in the messages array
+  const getLastResponse = () => {
+    for (let i = messages.length - 1; i >= 0; i--) {
+      if (messages[i]?.role === "assistant") {
+        return messages[i]?.content;
+      }
+    }
+    return "";
+  };
+
   return (
-    <div className="flex flex-col mx-24 justify-center">
+    <div className="flex flex-col justify-center">
       <form onSubmit={handleSubmit} className="text-center">
-        <label>
-          Top 10...
-          <input
-            value={input}
-            placeholder="anime, filmler, yemekler..."
-            onChange={handleInputChange}
-            className="p-1 rounded"
-          />
-        </label>
+        <input
+          value={input}
+          placeholder="anime, movies, toys..."
+          onChange={handleInputChange}
+          className="p-2 rounded-l-xl"
+        />
         <button
-          className="bg-slate-300 p-1 rounded hover:bg-slate-400"
+          className="bg-slate-300 p-2 rounded-r-xl hover:bg-slate-400"
           type="submit"
         >
-          Gönder
+          Submit
         </button>
       </form>
 
       <ul>
-        {messages.map((m, index) => (
-          <li key={index}>
-            {m.role === "user" ? "Sen: " : "AI: "}
-            {m.content}
-          </li>
-        ))}
+        <li>{getLastResponse()}</li>
       </ul>
     </div>
   );
