@@ -1,34 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Top Ten App
 
-## Getting Started
+Bu uygulamayı Next.js, TypeScript, Tailwind, React-Markdown ve OpenAI API kullanarak geliştirdim. Kullanıcı kutuya bir konu giriyor, örneğin "anime", "filmler", "yemekler" gibi ve kullanıcıya girilen konuyla ilgili OpenAI'dan Top 10 listesi sunuluyor. Bu proje ilk olarak şaka amaçlı, her zaman ilk sırada "Your Mom" yazacak şekilde geliştirildi. Daha sonra düzgün bir Top 10 uygulamasına dönüştürülmüştür.
 
-First, run the development server:
+# Teknolojiler
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- Next.js 13 (App Router)
+- React
+- React-Markdown
+- Tailwind
+- Tailwind Typography
+- OpenAI API
+- Vercel AI SDK
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Eksiklikler
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Bazen listenin son ögesi, onuncu öge yeni satırda gösterilmiyor.
+- Tasarım iyileştirilebilir.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Yararlanılan kaynaklar
 
-## Learn More
+- https://sdk.vercel.ai/docs/api-reference/use-chat
+- https://platform.openai.com/
 
-To learn more about Next.js, take a look at the following resources:
+# License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Bu proje MIT lisansı altındadır.
