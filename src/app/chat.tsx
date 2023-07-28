@@ -1,6 +1,7 @@
 "use client";
 
 import { useChat } from "ai/react";
+import ReactMarkdown from "react-markdown";
 
 export default function Chat() {
   const { messages, input, handleInputChange, handleSubmit } = useChat({
@@ -34,9 +35,9 @@ export default function Chat() {
         </button>
       </form>
 
-      <ul>
-        <li>{getLastResponse()}</li>
-      </ul>
+      <div className="mt-10 markdown-container prose lg:prose-xl flex flex-col items-center">
+        <ReactMarkdown>{getLastResponse()}</ReactMarkdown>
+      </div>
     </div>
   );
 }
