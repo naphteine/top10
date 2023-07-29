@@ -25,17 +25,17 @@ export default function Chat() {
           value={input}
           placeholder="anime, movies, toys..."
           onChange={handleInputChange}
-          className="p-2 rounded-l-xl"
+          className="p-2 rounded-l-xl bg-white dark:bg-slate-600"
         />
         <button
-          className="bg-slate-300 p-2 rounded-r-xl hover:bg-slate-400"
+          className="bg-slate-300 p-2 rounded-r-xl hover:bg-slate-400 dark:bg-slate-600 dark:hover:bg-slate-500 transition"
           type="submit"
         >
           Submit
         </button>
       </form>
 
-      <div className="mt-10 markdown-container prose lg:prose-xl">
+      <div className="mt-10 markdown-container prose lg:prose-xl dark:prose-invert">
         <ReactMarkdown>{getLastResponse()}</ReactMarkdown>
       </div>
     </div>
