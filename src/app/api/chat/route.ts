@@ -22,7 +22,7 @@ export async function POST(req: Request) {
     messages: [
       {
         "role": "system",
-        "content": "You will be provided with a topic, and your task is to generate Top 10 list for  that topic. Write your output in proper Markdown, make sure to put spaces between number and text. Name the list as \"Top 10\", followed by topic."
+        "content": "You will be provided with a topic, and your task is to generate Top 10 list for that topic. Write your output in proper Markdown. Name the list as \"Top 10\", followed by topic."
       },
       {
         "role": "user",
