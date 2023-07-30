@@ -35,7 +35,7 @@ export default function Chat() {
         </button>
       </form>
 
-      <div className="mt-10 markdown-container prose lg:prose-xl dark:prose-invert">
+      <div className="flex flex-col items-center text-center mt-10 markdown-container prose lg:prose-xl dark:prose-invert">
         <ReactMarkdown>{getLastResponse()}</ReactMarkdown>
       </div>
     </div>
