@@ -1,6 +1,6 @@
 # Top Ten App
 
-This is a web app developed using Next.js, Tailwind and OpenAI, that generates a top ten list using OpenAI, on the topic user provided.
+This is a web app developed using Next.js, Tailwind and OpenAI, that generates a top ten list on the topic user provided.
 
 # Getting Started
 
