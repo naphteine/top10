@@ -4,7 +4,7 @@ This is a web app developed using Next.js, Tailwind and OpenAI, that generates a
 
 # Getting Started
 
-You can try the demo [here](https://top10-gg.vercel.app).
+You can try the demo [here](https://top10.gokay.works).
 
 To run the code yourself;
 
